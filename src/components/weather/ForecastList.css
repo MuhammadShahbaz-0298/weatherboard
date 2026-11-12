@@ -1,0 +1,25 @@
+.forecast-list {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.forecast-list--loading {
+  gap: var(--space-2);
+}
+
+.forecast-list__skeleton {
+  display: block;
+  height: 4.75rem;
+}
+
+@media (min-width: 64rem) {
+  .forecast-list,
+  .forecast-list--loading {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: var(--space-2);
+  }
+
+  .forecast-list__skeleton {
+    height: 10.5rem;
+  }
+}

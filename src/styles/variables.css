@@ -1,0 +1,93 @@
+:root {
+  color-scheme: light;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+
+  --color-bg: #f3f6f9;
+  --color-bg-glow: #e6f2ee;
+  --color-surface: #ffffff;
+  --color-surface-muted: #edf2f6;
+  --color-surface-strong: #e1e8ee;
+  --color-text: #14212b;
+  --color-text-muted: #536170;
+  --color-border: #d6dfe7;
+  --color-border-strong: #b9c6d2;
+  --color-accent: #0f766e;
+  --color-accent-strong: #0a5c56;
+  --color-accent-soft: #dff3ef;
+  --color-accent-text: #ffffff;
+  --color-danger: #b42318;
+  --color-danger-soft: #fdecea;
+  --color-warning: #925200;
+  --color-warning-soft: #fff3e0;
+  --color-success: #067647;
+  --color-success-soft: #e4f6ec;
+  --color-info: #155bd4;
+  --color-info-soft: #e8f0fe;
+  --color-focus: #0f766e;
+  --color-shimmer: rgba(255, 255, 255, 0.32);
+  --color-overlay: rgba(11, 22, 32, 0.55);
+  --shadow-sm: 0 1px 2px rgba(15, 30, 45, 0.06);
+  --shadow-md: 0 12px 32px rgba(15, 30, 45, 0.09);
+  --shadow-lg: 0 24px 70px rgba(15, 30, 45, 0.16);
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.375rem;
+  --text-2xl: 1.75rem;
+  --text-3xl: 2.25rem;
+  --text-hero: clamp(3.25rem, 12vw, 5.75rem);
+
+  --radius-sm: 0.5rem;
+  --radius-md: 0.875rem;
+  --radius-lg: 1.25rem;
+  --radius-full: 999px;
+
+  --transition-fast: 140ms ease;
+  --transition-base: 220ms ease;
+  --width-page: 78rem;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --color-bg: #0c1117;
+  --color-bg-glow: #10241f;
+  --color-surface: #151c24;
+  --color-surface-muted: #1c2530;
+  --color-surface-strong: #25313d;
+  --color-text: #e8eef4;
+  --color-text-muted: #a3afbd;
+  --color-border: #2b3744;
+  --color-border-strong: #405062;
+  --color-accent: #5eead4;
+  --color-accent-strong: #8af4e2;
+  --color-accent-soft: #133b35;
+  --color-accent-text: #062d29;
+  --color-danger: #ffa79d;
+  --color-danger-soft: #3d1d1a;
+  --color-warning: #f5c06a;
+  --color-warning-soft: #3a2a10;
+  --color-success: #6ee7a8;
+  --color-success-soft: #143326;
+  --color-info: #8ab4ff;
+  --color-info-soft: #172640;
+  --color-focus: #8af4e2;
+  --color-shimmer: rgba(255, 255, 255, 0.06);
+  --color-overlay: rgba(2, 6, 10, 0.7);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 12px 32px rgba(0, 0, 0, 0.34);
+  --shadow-lg: 0 24px 70px rgba(0, 0, 0, 0.5);
+}

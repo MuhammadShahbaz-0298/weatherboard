@@ -1,0 +1,123 @@
+.current-weather .card__title {
+  font-size: var(--text-2xl);
+  overflow-wrap: anywhere;
+}
+
+.current-weather__actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--space-1);
+  flex-wrap: wrap;
+}
+
+.current-weather__hero {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.current-weather__reading {
+  min-width: 0;
+}
+
+.current-weather__temperature {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-1);
+  font-size: var(--text-hero);
+  font-weight: 700;
+  letter-spacing: -0.06em;
+  line-height: 0.9;
+}
+
+.current-weather__unit {
+  margin-top: 0.35em;
+  color: var(--color-text-muted);
+  font-size: var(--text-xl);
+  font-weight: 650;
+  letter-spacing: 0;
+}
+
+.current-weather__condition {
+  margin-top: var(--space-2);
+  color: var(--color-text-muted);
+  font-size: var(--text-lg);
+  overflow-wrap: anywhere;
+}
+
+.current-weather__details {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-3);
+  margin-top: var(--space-6);
+}
+
+.current-weather__detail {
+  display: grid;
+  gap: var(--space-1);
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+  background: var(--color-surface-muted);
+}
+
+.current-weather__detail-label {
+  color: var(--color-text-muted);
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.current-weather__detail-value {
+  font-size: var(--text-xl);
+  font-weight: 650;
+  letter-spacing: -0.02em;
+}
+
+.current-weather__updated {
+  margin-top: var(--space-4);
+  color: var(--color-text-muted);
+  font-size: var(--text-xs);
+}
+
+.current-weather__skeleton {
+  display: grid;
+  gap: var(--space-4);
+  padding: var(--space-2) 0;
+}
+
+.current-weather__skeleton-title {
+  display: block;
+  width: 40%;
+  height: 1.75rem;
+}
+
+.current-weather__skeleton-temperature {
+  display: block;
+  width: 55%;
+  height: 5rem;
+}
+
+.current-weather__skeleton-line {
+  display: block;
+  width: 30%;
+  height: 1rem;
+}
+
+.current-weather__skeleton-details {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-3);
+}
+
+.current-weather__skeleton-details .skeleton {
+  display: block;
+  height: 4.5rem;
+}
+
+@media (max-width: 30rem) {
+  .current-weather__actions {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}

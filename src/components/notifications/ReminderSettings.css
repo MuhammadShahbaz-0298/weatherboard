@@ -1,0 +1,35 @@
+.reminder-settings__content {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.reminder-settings__granted {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.reminder-settings__form {
+  display: grid;
+  gap: var(--space-3);
+  align-items: end;
+}
+
+.reminder-settings__mode {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+}
+
+.reminder-settings__mode strong {
+  color: var(--color-text);
+}
+
+@media (min-width: 34rem) {
+  .reminder-settings__form {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  .reminder-settings__form .button {
+    margin-bottom: 0.1rem;
+  }
+}

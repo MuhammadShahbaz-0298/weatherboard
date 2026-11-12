@@ -1,0 +1,128 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-bg);
+  background: color-mix(in srgb, var(--color-bg) 88%, transparent);
+  backdrop-filter: blur(12px);
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  width: 100%;
+  max-width: var(--width-page);
+  min-height: 4.25rem;
+  margin: 0 auto;
+  padding: var(--space-2) var(--space-4);
+}
+
+.header__brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  min-width: 0;
+}
+
+.header__mark {
+  width: 1.25rem;
+  height: 1.25rem;
+  flex: none;
+  border: 0.3rem solid var(--color-accent);
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 0.12rem var(--color-bg);
+}
+
+.header__title {
+  font-size: var(--text-lg);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.header__controls {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex: none;
+}
+
+.header__theme {
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  background: var(--color-surface);
+  color: var(--color-text);
+}
+
+.header__theme:hover {
+  border-color: var(--color-border-strong);
+  background: var(--color-surface-muted);
+}
+
+.header__theme svg {
+  width: 1.2rem;
+  height: 1.2rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.header__theme svg path:first-child {
+  fill: currentColor;
+  stroke: none;
+}
+
+.header__units {
+  display: flex;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  background: var(--color-surface);
+  padding: 0.125rem;
+}
+
+.header__unit {
+  min-width: 2.75rem;
+  min-height: 2.75rem;
+  border: none;
+  border-radius: var(--radius-full);
+  background: transparent;
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+  font-weight: 650;
+}
+
+.header__unit:hover {
+  color: var(--color-text);
+}
+
+.header__unit[aria-pressed="true"] {
+  background: var(--color-accent);
+  color: var(--color-accent-text);
+}
+
+@media (min-width: 48rem) {
+  .header__inner {
+    min-height: 4.75rem;
+    padding-inline: var(--space-6);
+  }
+
+  .header__mark {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+
+  .header__title {
+    font-size: var(--text-xl);
+  }
+}

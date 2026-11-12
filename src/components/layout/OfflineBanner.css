@@ -1,0 +1,18 @@
+.offline-banner {
+  width: 100%;
+  max-width: var(--width-page);
+  margin: 0 auto;
+  padding: var(--space-3) var(--space-4) 0;
+}
+
+@media (min-width: 48rem) {
+  .offline-banner {
+    padding: var(--space-4) var(--space-6) 0;
+  }
+}
+
+@media (min-width: 80rem) {
+  .offline-banner {
+    padding-inline: var(--space-8);
+  }
+}

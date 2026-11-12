@@ -1,0 +1,148 @@
+.weather-icon {
+  display: inline-block;
+  flex: none;
+}
+
+.weather-icon svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.weather-icon--small {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.weather-icon--medium {
+  width: 4rem;
+  height: 4rem;
+}
+
+.weather-icon--large {
+  width: 7rem;
+  height: 7rem;
+}
+
+.weather-icon__rays line {
+  stroke: var(--color-accent);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+}
+
+.weather-icon__sun-body {
+  fill: var(--color-accent);
+}
+
+.weather-icon__sun-small circle {
+  fill: var(--color-accent);
+  opacity: 0.75;
+}
+
+.weather-icon__cloud {
+  fill: var(--color-text-muted);
+}
+
+.weather-icon__rain line {
+  stroke: var(--color-accent);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  animation: weather-rain 1.1s linear infinite;
+}
+
+.weather-icon__rain line:nth-child(2) {
+  animation-delay: 0.25s;
+}
+
+.weather-icon__rain line:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+.weather-icon__snow circle {
+  fill: var(--color-accent);
+  animation: weather-snow 2.4s ease-in-out infinite;
+}
+
+.weather-icon__snow circle:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.weather-icon__snow circle:nth-child(3) {
+  animation-delay: 1s;
+}
+
+.weather-icon__bolt {
+  fill: var(--color-warning);
+  animation: weather-flash 2.8s ease-in-out infinite;
+}
+
+.weather-icon__mist line {
+  stroke: var(--color-text-muted);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+}
+
+.weather-icon--clear .weather-icon__rays {
+  transform-origin: 32px 32px;
+  animation: weather-spin 24s linear infinite;
+}
+
+.weather-icon--clouds .weather-icon__cloud,
+.weather-icon--rain .weather-icon__cloud,
+.weather-icon--drizzle .weather-icon__cloud,
+.weather-icon--snow .weather-icon__cloud,
+.weather-icon--thunder .weather-icon__cloud,
+.weather-icon--mist .weather-icon__cloud {
+  animation: weather-float 6s ease-in-out infinite;
+}
+
+@keyframes weather-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes weather-float {
+  50% {
+    transform: translateY(-2px);
+  }
+}
+
+@keyframes weather-rain {
+  0% {
+    opacity: 0;
+    transform: translateY(-2px);
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+}
+
+@keyframes weather-snow {
+  50% {
+    opacity: 0.45;
+    transform: translateY(3px);
+  }
+}
+
+@keyframes weather-flash {
+  0%,
+  88%,
+  100% {
+    opacity: 1;
+  }
+  92% {
+    opacity: 0.35;
+  }
+}
+
+@media (max-width: 30rem) {
+  .weather-icon--large {
+    width: 5.5rem;
+    height: 5.5rem;
+  }
+}

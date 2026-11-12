@@ -1,0 +1,33 @@
+{
+  "name": "WeatherBoard",
+  "short_name": "WeatherBoard",
+  "description": "A calm weather dashboard with current conditions, a five-day forecast, saved cities, and notification preferences.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "theme_color": "#0f766e",
+  "background_color": "#f3f6f9",
+  "lang": "en",
+  "categories": ["weather", "utilities"],
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
