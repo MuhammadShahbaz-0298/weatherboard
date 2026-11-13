@@ -36,7 +36,7 @@ Requirements: Node.js 20.19 or newer.
 npm install
 ```
 
-**Live URL:** placeholder (e.g. `https://weatherboard.vercel.app`)
+**Live URL:** weatherboard-azure.vercel.app
 
 Create a `.env` file from `.env.example` and add an OpenWeatherMap API key:
 
